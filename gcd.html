@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Gcd of Two Number</title>
+    </head>
+    <body>
+        <p>GCD of Two Number</p>
+
+        <script>
+ 
+            let a = prompt("Enter 1st no.");
+            let b = prompt("Enter 2nd no.");
+            function gcd(a, b)
+            {
+               
+                if (b == 0){
+                    return a;
+                }
+                              
+                return gcd(b, a%b);
+            }
+             document.write("GCD of "+ a + " and " + b + " is " + gcd(a, b));               
+            alert("GCD of" +a+ "and" +b+ "is =" + gcd(a,b));         
+            </script>
+
+    </body>
+</html>

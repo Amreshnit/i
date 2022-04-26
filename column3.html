@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur saepe libero iste expedita consectetur doloremque cum? Doloribus numquam illo quia minus modi sunt, optio expedita doloremque corrupti ducimus voluptatum architecto molestiae aliquam dolorum non accusantium fugit totam cumque perferendis est quos suscipit veniam? Quae aliquam ab pariatur dolore ipsa.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit illum hic ratione voluptate sit. Error quam, natus, possimus voluptatibus cumque sint pariatur eligendi, eum odio sit perferendis autem et nesciunt ut dolor ab eaque impedit quis distinctio quas hic! Error molestiae expedita iure enim ratione quaerat reprehenderit recusandae totam minima.</p>
+  </div>
+</div>
+<h2>Four Equal Columns</h2>
+
+<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam odio iure ut eligendi, natus error molestiae maiores, doloremque optio ipsum fugit placeat aliquam eum praesentium sunt! Tenetur quasi aliquid sed ut at. Consequuntur quam veritatis dolores illo, molestias animi quas quod aut quasi quis deleniti atque, explicabo blanditiis harum dicta?
+    </p>
+  </div>
+  <div class="column1" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati, odit quod, deserunt libero laboriosam cum tempora, amet rerum sed quidem. Eum ex quidem sed omnis dicta voluptate? Tenetur eum, assumenda nulla ipsum doloremque nihil dolor tempora numquam est repellat velit accusantium qui omnis harum, perspiciatis natus eveniet exercitationem ipsam.</p>
+  </div>
+  <div class="column1" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptates adipisci voluptas laborum commodi consequuntur numquam odit doloremque corporis, reprehenderit odio dolor animi amet accusantium, necessitatibus, quae maxime nulla ipsum? Possimus reiciendis voluptatum minus fuga mollitia repellat placeat asperiores aliquam voluptatem id, voluptas nulla, aliquid dolorum expedita consectetur. Suscipit, aliquam!</p>
+  </div>
+  <div class="column1" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quae voluptas atque officia! Mollitia nihil repellendus tenetur repudiandae neque assumenda nemo pariatur, quibusdam quia cupiditate odio at molestiae nesciunt quod? In nostrum quas aut recusandae illo quasi dolorum, magnam laboriosam, dolores porro ipsam sit veritatis excepturi esse dignissimos, rem incidunt.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

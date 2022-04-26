@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Verification</title>
+</head>
+<body>
+    <form action="">
+        <label for="pan">PAN CARD:</label>
+        <input type="text" id="pan_no" name="pan_no" placeholder="PAN No." maxlength="10" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter valid PAN number. E.g. AAAAA9999A" required/>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" pattern="([a-z A-Z '-'\S]*)" title="Enter Valid Name">
+        <label for="dob">Date Of Birth: </label>
+        <input type="date" name="dob" id="dob">
+        <button id="submit" >Submit</button>
+    </form>
+</body>
+</html>

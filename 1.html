@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Application form</title>
+  </head>
+
+  <body>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="name">Reg. no:</label>
+          <input type="text" id="reg.no" name="user_reg.no" />
+        </li>
+
+        <li>
+          <label for="name">Date of Birth:</label>
+          <input type="date" id="dob" name="user_dob" />
+        </li>
+
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="mob no">Mobile no:</label>
+          <input
+            type="text"
+            id="mobile_no"
+            name="user_mob_no"
+            required
+            minlength="10"
+            maxlength="10"
+            size="10"
+          />
+          <br />
+          <button type="button" onclick="validate();" value="Validate Name">save</button>
+          <a href="1b.html">
+            <button type="button">next</button>
+          </a>
+        </li>
+      </ul>
+    </form>
+
+    <script>
+      function validate() {
+        var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        var name = document.getElementById("name").value;
+        if (!regName.test(name)) {
+          alert("Please enter your full name (first & last name).");
+          document.getElementById("name").focus();
+          return false;
+        } else {
+          alert("Valid name given.");
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

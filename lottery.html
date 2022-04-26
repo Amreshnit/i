@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+</head>
+
+<body>
+    <script>
+        class Node {
+            constructor(number, name) {
+                this.number = number;
+                this.name = name;
+                this.next = null;
+            }
+        }
+
+        function add() {
+            this.head = null;
+            this.tail = null;
+            let n = prompt("Enter Size : ");
+            for (i = 0; i < n; ++i) {
+                var name = prompt("Enter Name : ");
+                var num = prompt("Enter Lottery Num : ");
+                var node = new Node(num, name);
+                if (this.head == null) {
+                    this.head = node;
+                    this.tail = node;
+                }
+                else {
+                    this.tail.next = node;
+                    this.tail = this.tail.next;
+                }
+            }
+            return this.head;
+        }
+
+        function search(head, num) {
+            let temp = head;
+            while (temp) {
+                let no = temp.number % 100;
+                if (no == num) {
+                    console.log(temp.name);
+                    console.log(temp.number);
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+        alert("Welcome");
+        let head = add();
+        let num = prompt("Enter Number For Search");
+        search(head, num);
+    </script>
+</body>
+</html>

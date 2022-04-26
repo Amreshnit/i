@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Element</title>
+</head>
+<body>
+    <centre><p style="color: brown;">MouseOver Image</p></centre>
+     <script>
+         function setimage(){
+             document.getElementById("img2").src ="img1.png";
+         }
+
+         function setimage1(){
+             document.getElementById("img2").src ="img2.png";
+         }
+
+         function setoldimage(){
+             document.getElementById("img2").src ="img2.jpg"
+         }
+
+
+     </script> 
+     <div>
+         <img src="img1.jpg" alt="image1" id="img1" onmouseover="setimage()" height="300" width="100" onmouseout="setoldimage()">
+         <img src="img2.jpg" alt="image2" id="img2"  onmouseover="setimage1()" height="300" width="100" onmouseout="setoldimage()">
+     </div>
+</body>
+</html>

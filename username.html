@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail</title>
+</head>
+<body>
+    <form id="form">
+    <label for="name"> Name:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    <input type="text" id="first" pattern="[a-z A-Z'-'\s]*" title="Enter Valid Name" required maxlength="20"><br>
+    <label for="password">Password: </label>
+    <input type="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" /><br>
+    <label for="mobile">Mobile No.: </label>
+    <input type="text" pattern="[6789][0-9]{9}" title="Please enter valid phone number"><br>
+    <button id="submit" onclick="Submitted Successfully">Submit</button>    
+    </form>
+    <script>
+     $("#submit").click(function(){
+         alert("submitted successfully");
+     })
+    </script>
+</body>
+</html>

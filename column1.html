@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur saepe libero iste expedita consectetur doloremque cum? Doloribus numquam illo quia minus modi sunt, optio expedita doloremque corrupti ducimus voluptatum architecto molestiae aliquam dolorum non accusantium fugit totam cumque perferendis est quos suscipit veniam? Quae aliquam ab pariatur dolore ipsa.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit illum hic ratione voluptate sit. Error quam, natus, possimus voluptatibus cumque sint pariatur eligendi, eum odio sit perferendis autem et nesciunt ut dolor ab eaque impedit quis distinctio quas hic! Error molestiae expedita iure enim ratione quaerat reprehenderit recusandae totam minima.</p>
+  </div>
+</div>
+<a href="column3.html"><input type="button" value="Merge" /></a>
+</body>
+</html>
